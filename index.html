@@ -1,1 +1,15 @@
 <p>hello worrld</p>
+function async (){
+    return new promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data1");
+            resolve("success");
+        },2000)
+    })
+}
+console.log("fetching data1 ......")
+let p1 = async(){
+    p1.then((res)=>{
+        console.log(res)
+    })
+}
